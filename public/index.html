@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway Spesial: Jawab & Menang!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container">
+        <div class="glass-card">
+            <header>
+                <h1>🎉 Giveaway Spesial 🎉</h1>
+                <p>Jawab pertanyaan di bawah ini dengan benar untuk mendapatkan hadiah eksklusif!</p>
+            </header>
+
+            <main>
+                <div id="loading" class="loading-spinner"></div>
+                
+                <div id="quiz-container" class="hidden">
+                    <div class="timer-container">
+                        <div class="timer-bar"><div id="timer-progress"></div></div>
+                        <div class="timer-text">Waktu tersisa: <span id="timer-count">20</span>s</div>
+                    </div>
+                    <h2 id="question-text">Memuat pertanyaan...</h2>
+                    <form id="quiz-form">
+                        <input type="hidden" id="question-id">
+                        
+                        <div id="options-container" class="options-grid">
+                            <!-- Pilihan jawaban akan dimuat di sini oleh JS -->
+                        </div>
+
+                        <div class="message-container">
+                            <p id="message" class="message hidden"></p>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="btn" disabled>Kirim Jawaban</button>
+                    </form>
+                </div>
+
+                <div id="success-container" class="hidden">
+                    <h2>🎊 Selamat! Jawaban Anda Benar! 🎊</h2>
+                    <p>Silakan klaim hadiah Anda melalui tombol di bawah ini:</p>
+                    <button id="claim-btn" class="btn btn-reward">Klaim Hadiah Saya</button>
+                    <button id="play-again-btn" class="btn btn-outline">Main Lagi</button>
+                </div>
+
+                <div id="reward-box-container" class="hidden">
+                    <h2>🎁 Hadiah Anda Siap! 🎁</h2>
+                    <div class="reward-link-box">
+                        <input type="text" id="reward-link-input" readonly value="https://contoh-link.com/hadiah">
+                    </div>
+                    <div class="reward-actions">
+                        <button id="use-link-btn" class="btn btn-reward">Gunakan</button>
+                        <button id="copy-link-btn" class="btn btn-outline">Salin</button>
+                    </div>
+                    <button id="play-again-btn-2" class="btn btn-outline" style="margin-top: 15px;">Main Lagi</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
