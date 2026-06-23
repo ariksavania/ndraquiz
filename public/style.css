@@ -326,11 +326,52 @@ h2 {
 
 /* Responsive */
 @media (max-width: 480px) {
+    .container {
+        margin: 2vh auto;
+        padding: 10px;
+    }
+
     .glass-card {
-        padding: 25px 20px;
+        padding: 20px 15px;
+        border-radius: 16px;
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    header p {
+        font-size: 0.85rem;
+    }
+
+    header {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+        margin-bottom: 15px;
+    }
+
+    .options-grid {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .option-label {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+        border-radius: 10px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+
+    .timer-container {
+        margin-bottom: 15px;
     }
 }
