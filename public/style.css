@@ -22,7 +22,6 @@ body {
     min-height: 100vh;
     background: var(--bg-gradient);
     color: var(--text-main);
-    display: flex;
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
@@ -78,11 +77,12 @@ body {
 }
 
 .container {
-    margin: auto;
+    margin: 5vh auto;
     width: 100%;
     max-width: 600px;
     padding: 20px;
     z-index: 1;
+    position: relative;
 }
 
 .glass-card {
